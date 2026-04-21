@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priceless | AI应用产品经理</title>
+  <meta name="description" content="Priceless，AI应用产品经理。" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#000000",
+            fg: "#ffffff",
+            muted: "#b8b8b8",
+            soft: "#1a1a1a",
+            line: "#2a2a2a"
+          },
+          boxShadow: {
+            glow: "0 0 40px rgba(255,255,255,0.06)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .grid-line {
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+    .soft-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .article-card:hover img,
+    .project-card:hover img {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-black/85 backdrop-blur border-b border-white/5">
+    <div class="mx-auto max-w-7xl px-5 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-black tracking-tight">Priceless</a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-white/70">
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#writing" class="hover:text-white transition">Writing</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </nav>
+
+     
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="absolute inset-0 grid-line opacity-40"></div>
+    <div class="mx-auto max-w-4xl px-5 pt-20 pb-14 md:pt-28 md:pb-20 text-center relative">
+      <h1 class="mt-6 text-4xl md:text-6xl font-black leading-[1.05] tracking-tight">
+        Build Better. Step by Step.<br />
+      </h1>
+
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <span class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-white/80">AI应用产品</span>
+        <span class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-white/80">电商</span>
+        <span class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-white/80">文旅</span>
+        <span class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-white/80">教育</span>
+        <span class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-white/80">Indie Developer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature intro -->
+  <section class="pt-4 pb-20">
+    <div class="mx-auto max-w-5xl px-5 text-center">
+      <p class="text-xs tracking-[0.45em] text-white/40 uppercase">P R O S P E C T</p>
+      <h2 class="mt-4 text-3xl md:text-5xl font-black tracking-tight">Join The New 1%</h2>
+      <p class="mt-4 text-white/60 text-sm md:text-base">
+        <a href="https://www.yuque.com/priceless/btdqmp/urm0zes777uqibom?singleDoc#《未来的产品，不是功能拼接，而是将AI作为能力底座，重新组织信息、流程与效率》" 
+           target="_blank" 
+           class="inline-block mt-4 text-white/60 text-sm md:text-base underline underline-offset-4 hover:text-white transition">
+          未来的产品，不是功能拼接，而是将 AI 作为能力底座，重新组织信息、流程与效率。
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-10">
+    <div class="mx-auto max-w-7xl px-5">
+      <div class="text-center mb-12">
+        <p class="text-xs tracking-[0.45em] text-white/40 uppercase">P R O J E C T S</p>
+        <h2 class="mt-4 text-3xl md:text-5xl font-black tracking-tight">精选项目</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <article class="project-card group">
+          <div class="overflow-hidden rounded-2xl border border-white/10 bg-white shadow-glow aspect-square flex items-center justify-center p-6 mx-auto w-full">
+            <img src="jdss-logo.png" alt="AI伴你游" class="max-w-full max-h-full object-contain transition duration-500 group-hover:scale-105" />
+          </div>
+          <div class="mt-4 text-left">
+            <h3 class="text-xl font-bold">AI伴你游</h3>
+            <p class="mt-2 text-sm leading-7 text-white/65">
+              文旅平台 AI 导游功能。围绕对话流程、提示词、知识库、RAG 和推荐逻辑设计，提升用户找景点、找产品、行程规划的效率。
+            </p>
+            <a href="javascript:void(0)" onclick="openModal('jdss-qrcode.jpg', '扫码体验 AI 伴你游')" class="mt-4 inline-block text-sm text-white underline underline-offset-4">Read more</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card group">
+          <div class="overflow-hidden rounded-2xl border border-white/10 bg-[#2d5d3d] shadow-glow aspect-square flex items-center justify-center p-6 mx-auto w-full">
+            <img src="swsz-logo.png" alt="时味苏州" class="max-w-full max-h-full object-contain transition duration-500 group-hover:scale-105" />
+          </div>
+          <div class="mt-4 text-left">
+            <h3 class="text-xl font-bold">时味苏州</h3>
+            <p class="mt-2 text-sm leading-7 text-white/65">
+              农文旅平台 0-1 建设，覆盖微信小程序、企业采购端与中后台。重点解决农产品销售、企业采购和农文旅交易问题。
+            </p>
+            <a href="javascript:void(0)" onclick="openModal('swsz-qrcode.webp', '扫码体验 时味苏州')" class="mt-4 inline-block text-sm text-white underline underline-offset-4">Read more</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card group">
+          <div class="overflow-hidden rounded-2xl border border-white/10 bg-[#0b0b0b] shadow-glow aspect-square mx-auto w-full">
+            <img src="ecommerce-dashboard.png" alt="电商运营报表监控系统" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" />
+          </div>
+          <div class="mt-4 text-left">
+            <h3 class="text-xl font-bold">电商运营报表监控系统</h3>
+            <p class="mt-2 text-sm leading-7 text-white/65">
+              面向代运营场景的数据报表和异常监控系统，减少报表编写时间，提升经营异常发现效率。
+            </p>
+            <a href="javascript:void(0)" onclick="openTextModal('系统提示', '此系统为公司内部自研系统，无法对外开放，请见谅')" class="mt-4 inline-block text-sm text-white underline underline-offset-4">Read more</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section id="writing" class="py-20">
+    <div class="mx-auto max-w-7xl px-5">
+      <div class="text-center mb-12">
+        <p class="text-xs tracking-[0.45em] text-white/40 uppercase">W R I T I N G</p>
+        <h2 class="mt-4 text-3xl md:text-5xl font-black tracking-tight">Explore Your Curiosity</h2>
+        <p class="mt-4 text-white/60 text-sm md:text-base">
+          记录我对 AI 产品、效率工具和业务场景落地的思考。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+        <article class="article-card border-b border-white/10 pb-6">
+          <a href="https://www.yuque.com/priceless/btdqmp/urvbnkvw3ypzp5t5?singleDoc#《AI产品不是功能堆砌，而是流程重构》" target="_blank" class="block group">
+            <div class="overflow-hidden rounded-2xl mx-auto">
+              <img src="https://picsum.photos/900/520?random=31" alt="文章封面" class="w-full h-52 object-cover transition duration-500 group-hover:scale-105" />
+            </div>
+            <h3 class="mt-4 text-xl font-bold leading-snug">AI 产品不是功能堆砌，而是流程重构</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">
+              从文旅导游到企业采购，我更关注 AI 如何重新定义用户决策路径和信息组织方式。
+            </p>
+            <span class="mt-4 inline-block text-sm text-white underline underline-offset-4">Read Full Post</span>
+          </a>
+        </article>
+
+        <article class="article-card border-b border-white/10 pb-6">
+          <div class="overflow-hidden rounded-2xl">
+            <img src="https://picsum.photos/900/520?random=32" alt="文章封面" class="w-full h-52 object-cover transition duration-500" />
+          </div>
+          <h3 class="mt-4 text-xl font-bold leading-snug">知识库产品最容易被忽略的三件事</h3>
+          <p class="mt-3 text-sm leading-7 text-white/65">
+            内容结构、召回策略、回答验证，这三件事决定了一个知识库到底能不能用。
+          </p>
+          <a href="javascript:void(0)" onclick="openTextModal('提示','作者正在熬夜编写中～')" class="mt-4 inline-block text-sm text-white underline underline-offset-4">Read Full Post</a>
+        </article>
+
+        <article class="article-card border-b border-white/10 pb-6">
+          <div class="overflow-hidden rounded-2xl">
+            <img src="https://picsum.photos/900/520?random=33" alt="文章封面" class="w-full h-52 object-cover transition duration-500" />
+          </div>
+          <h3 class="mt-4 text-xl font-bold leading-snug">0-1 产品建设中，MVP 才是真正的起点</h3>
+          <p class="mt-3 text-sm leading-7 text-white/65">
+            先解决最关键的用户问题，再逐步扩展能力，是项目从 0 到 1 最稳妥的方式。
+          </p>
+          <a href="javascript:void(0)" onclick="openTextModal('提示','作者正在熬夜编写中～')" class="mt-4 inline-block text-sm text-white underline underline-offset-4">Read Full Post</a>
+        </article>
+
+        <article class="article-card border-b border-white/10 pb-6">
+          <div class="overflow-hidden rounded-2xl">
+            <img src="https://picsum.photos/900/520?random=34" alt="文章封面" class="w-full h-52 object-cover transition duration-500" />
+          </div>
+          <h3 class="mt-4 text-xl font-bold leading-snug">做产品最重要的是判断“值不值得做”</h3>
+          <p class="mt-3 text-sm leading-7 text-white/65">
+            真正优秀的产品经理，不只是会写 PRD，更会判断资源、收益与时机。
+          </p>
+          <a href="javascript:void(0)" onclick="openTextModal('提示','作者正在熬夜编写中～')" class="mt-4 inline-block text-sm text-white underline underline-offset-4">Read Full Post</a>
+        </article>
+
+        <article class="article-card border-b border-white/10 pb-6">
+          <div class="overflow-hidden rounded-2xl">
+            <img src="https://picsum.photos/900/520?random=35" alt="文章封面" class="w-full h-52 object-cover transition duration-500" />
+          </div>
+          <h3 class="mt-4 text-xl font-bold leading-snug">AI 导游为什么需要“推荐逻辑”而不只是问答</h3>
+          <p class="mt-3 text-sm leading-7 text-white/65">
+            问答解决的是“知道什么”，推荐解决的是“下一步做什么”。
+          </p>
+          <a href="javascript:void(0)" onclick="openTextModal('提示','作者正在熬夜编写中～')" class="mt-4 inline-block text-sm text-white underline underline-offset-4">Read Full Post</a>
+        </article>
+
+        <article class="article-card border-b border-white/10 pb-6">
+          <div class="overflow-hidden rounded-2xl">
+            <img src="https://picsum.photos/900/520?random=36" alt="文章封面" class="w-full h-52 object-cover transition duration-500" />
+          </div>
+          <h3 class="mt-4 text-xl font-bold leading-snug">中后台系统的本质：减少人的重复决策</h3>
+          <p class="mt-3 text-sm leading-7 text-white/65">
+            中后台不是“页面多”，而是把复杂流程标准化、清晰化、自动化。
+          </p>
+          <a href="javascript:void(0)" onclick="openTextModal('提示','作者正在熬夜编写中～')" class="mt-4 inline-block text-sm text-white underline underline-offset-4">Read Full Post</a>
+        </article>
+
+      </div>
+
+      <div class="mt-10 text-center">
+        <button class="px-5 py-2 border border-white/20 rounded-full text-sm text-white/80 hover:text-white hover:border-white/40 transition">
+          Continuously updating
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="text-center mb-12">
+        <p class="text-xs tracking-[0.45em] text-white/40 uppercase">A B O U T</p>
+        <h2 class="mt-4 text-3xl md:text-5xl font-black tracking-tight">Who is Priceless?</h2>
+        <p class="mt-4 text-white/60 text-sm md:text-base">Just a product manager obsessed with useful AI.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-10 items-center">
+        <div class="flex justify-center">
+          <img
+            src="avatar.png"
+            alt="portrait"
+            class="w-64 h-64 md:w-72 md:h-72 rounded-full object-cover border-4 border-white/10 shadow-glow"
+          />
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-black">Hey, I'm Priceless.</h3>
+          <p class="mt-4 text-white/70 leading-8">
+            我是一名 AI 应用产品经理，关注大模型在文旅、电商、交易和中后台系统中的落地。
+            过去的经历让我更清楚：好产品不是“功能更多”，而是“用户更省力、业务更轻松、团队更高效”。
+          </p>
+          <p class="mt-4 text-white/70 leading-8">
+            我擅长从业务目标出发，拆解用户需求、定义 MVP、设计流程和指标口径，并推动研发、设计和第三方协作落地。
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">Prompt 设计</span>
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">知识库</span>
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">RAG</span>
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">PRD</span>
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">0-1建设</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="mx-auto max-w-5xl px-5 text-center">
+      <p class="text-xs tracking-[0.45em] text-white/40 uppercase">C O N T A C T</p>
+      <h2 class="mt-4 text-3xl md:text-5xl font-black tracking-tight">Let’s build something useful.</h2>
+      <p class="mt-4 text-white/60 text-sm md:text-base">
+        如果你在寻找一位懂业务、懂技术、也懂 AI 落地的产品经理，可以联系我。
+      </p>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5 text-left">
+        <div class="soft-card rounded-2xl p-6">
+          <p class="text-sm text-white/50">Phone</p>
+          <p class="mt-2 text-lg font-bold">17395140547</p>
+        </div>
+        <div class="soft-card rounded-2xl p-6">
+          <p class="text-sm text-white/50">Email</p>
+          <p class="mt-2 text-lg font-bold break-all">2558157122@qq.com</p>
+        </div>
+        <div class="soft-card rounded-2xl p-6">
+          <p class="text-sm text-white/50">Location</p>
+          <p class="mt-2 text-lg font-bold">苏州</p>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="mailto:18888888888@163.com" class="px-6 py-3 rounded-full bg-white text-black font-bold hover:opacity-90 transition">
+          Send Email
+        </a>
+        <a href="tel:18888888888" class="px-6 py-3 rounded-full border border-white/20 text-white hover:border-white/40 transition">
+          Call Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-5 text-center text-sm text-white/50">
+      <div>© 2026 All Rights Reserved</div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="imageModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/90 p-4 transition-opacity duration-300">
+    <div class="relative max-w-2xl w-full bg-[#0b0b0b] rounded-3xl overflow-hidden border border-white/10 shadow-glow animate-fade-in">
+      <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalContentImage" class="p-8 text-center">
+        <h3 id="modalTitle" class="text-xl font-bold mb-6">扫码体验项目</h3>
+        <div class="aspect-square max-w-xs mx-auto overflow-hidden rounded-2xl border border-white/10 bg-white p-2">
+          <img id="modalImage" src="" alt="二维码" class="w-full h-full object-contain" />
+        </div>
+        <p class="mt-6 text-sm text-white/50">请使用微信扫描上方二维码</p>
+      </div>
+      <div id="modalContentText" class="p-12 text-center hidden">
+        <h3 id="modalTextTitle" class="text-2xl font-bold mb-6">系统提示</h3>
+        <p id="modalTextBody" class="text-lg text-white/70 leading-relaxed italic font-serif">
+          内容加载中...
+        </p>
+        <div class="mt-10">
+          <button onclick="closeModal()" class="px-8 py-3 rounded-full bg-white text-black font-bold hover:opacity-90 transition">
+            我知道了
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      function openModal(imagePath, title) {
+        const modal = document.getElementById('imageModal');
+        const img = document.getElementById('modalImage');
+        const titleElement = document.getElementById('modalTitle');
+        const contentImage = document.getElementById('modalContentImage');
+        const contentText = document.getElementById('modalContentText');
+
+        img.src = imagePath;
+        if (title) titleElement.textContent = title;
+
+        contentImage.classList.remove('hidden');
+        contentText.classList.add('hidden');
+        
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function openTextModal(title, text) {
+        const modal = document.getElementById('imageModal');
+        const titleElement = document.getElementById('modalTextTitle');
+        const bodyElement = document.getElementById('modalTextBody');
+        const contentImage = document.getElementById('modalContentImage');
+        const contentText = document.getElementById('modalContentText');
+
+        if (title) titleElement.textContent = title;
+        if (text) bodyElement.textContent = text;
+
+        contentImage.classList.add('hidden');
+        contentText.classList.remove('hidden');
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('imageModal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = 'auto';
+      }
+
+      // 点击背景关闭
+      document.getElementById('imageModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal();
+        }
+      });
+  </script>
+
+</body>
+</html>
